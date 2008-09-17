@@ -7,7 +7,7 @@ eval "use Test::Manifest 1.14";
 
 WriteMakefile(
 	'NAME'	       => 'Module::Extract::VERSION',
-	'ABSTRACT'     => 'This is what the module does',
+	'ABSTRACT'     => 'Extract $VERSION from module source code',
 	'VERSION_FROM' => 'lib/VERSION.pm',
 	'LICENSE'      => 'perl',
 	'AUTHOR'       => 'brian d foy <bdfoy@cpan.org>',
@@ -16,6 +16,12 @@ WriteMakefile(
 		'Test::More' => '0',
 		},
 
+	'META_MERGE'   => {
+		no_index => {
+			directory => [ qw(t inc corpus) ],
+			}
+		},
+		
 	'PM'           => {
 		'lib/VERSION.pm'         => '$(INST_LIBDIR)/VERSION.pm',
 		},

@@ -1,4 +1,3 @@
-# $Id$
 package Module::Extract::VERSION;
 use strict;
 
@@ -10,7 +9,7 @@ use vars qw($VERSION);
 
 use Carp qw(carp);
 
-$VERSION = '0.13';
+$VERSION = '1.01';
 
 =head1 NAME
 
@@ -19,6 +18,12 @@ Module::Extract::VERSION - Extract a module version without running code
 =head1 SYNOPSIS
 
 	use Module::Extract::VERSION;
+
+	my $version   # just the version
+		= Module::Extract::VERSION->parse_version_safely( $file );
+
+	my @version_info # extra info
+		= Module::Extract::VERSION->parse_version_safely( $file );
 
 =head1 DESCRIPTION
 
@@ -134,7 +139,7 @@ code by Andreas KE<ouml>nig, but I've moved most of it around.
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (c) 2008, brian d foy, All Rights Reserved.
+Copyright (c) 2008-2011, brian d foy, All Rights Reserved.
 
 You may redistribute this under the same terms as Perl itself.
 

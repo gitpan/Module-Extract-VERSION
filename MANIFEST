@@ -1,11 +1,10 @@
 Changes
-corpus/DifferentPackage.pm
 corpus/Easy.pm
-corpus/NoVersion.pm
 corpus/RCS.pm
 corpus/Underscore.pm
+corpus/ToTk.pm
 examples/placeholder.pl
-lib/VERSION.pm
+lib/Module/Extract/VERSION.pm
 LICENSE
 Makefile.PL
 MANIFEST			This list of files
@@ -14,5 +13,6 @@ t/corpus.t
 t/load.t
 t/pod.t
 t/pod_coverage.t
+t/prereq.t
 t/test_manifest
 META.yml                                 Module meta-data (added by MakeMaker)

@@ -1,11 +1,9 @@
 
-0.13 - Thu Dec 25 14:58:44 2008
-	* parse_version_safely now has a list context. It returns 
-	the sigil, identifier, value, filename, and line number
-	for the VERSION variable.
-	* Knowing the package name of the VERSION is important:
-	it might be different than the filename or current 
-	package would suggest.
+1.01 - Tue Apr 26 05:08:52 2011
+	* Bump to a full release version. The module isn't going to
+	change that much now.
+	* Add an example to the synopsis.
+	* Other than that, it's the same old code. :)
 
 0.12 - Tue Sep 16 21:55:13 2008
 	* Moved everything to git

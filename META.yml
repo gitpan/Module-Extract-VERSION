@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Module-Extract-VERSION
-version:            1.01
+version:            1.10_01
 abstract:           Extract ERSION from module source code
 author:
     - brian d foy <bdfoy@cpan.org>
